@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prathmesh Garud — aspiring AI/ML Engineer, Python Developer and AI Automation enthusiast based in Pune, India." />
+  <meta name="theme-color" content="#090d18" />
+  <title>Prathmesh Garud | AI & Python Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#090d18;--panel:#101827;--panel2:#131f31;--text:#edf3ff;--muted:#9aa9bf;--line:rgba(169,190,220,.14);--cyan:#69e1dc;--blue:#8ca8ff;--max:1120px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{margin:0;background:radial-gradient(ellipse at 80% 0%,rgba(69,103,180,.18),transparent 34%),radial-gradient(ellipse at 5% 25%,rgba(48,192,180,.09),transparent 28%),var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(9,13,24,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+    nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:800;letter-spacing:-.7px;font-size:18px}.brand span{color:var(--cyan)}
+    .navlinks{display:flex;align-items:center;gap:26px;color:var(--muted);font-size:13px;font-weight:700}.navlinks a:hover{color:var(--cyan)}
+    .nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:11px 17px;border-radius:9px;font-weight:800;font-size:13px;border:1px solid var(--line);transition:.2s}
+    .nav-cta,.btn.primary{background:var(--cyan);color:#07151a;border-color:var(--cyan)}.btn:hover,.nav-cta:hover{transform:translateY(-2px)}
+    .hero{padding:106px 0 92px;display:grid;grid-template-columns:1.3fr .7fr;gap:60px;align-items:center;min-height:620px}
+    .eyebrow,.mono{font-family:"DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);font-size:11px}
+    .eyebrow{display:flex;align-items:center;gap:10px}.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 15px var(--cyan)}
+    h1{font-size:clamp(46px,7vw,76px);letter-spacing:-4px;line-height:1.04;margin:22px 0 20px;font-weight:800}
+    h1 .accent{background:linear-gradient(100deg,var(--cyan),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{font-size:17px;color:var(--muted);max-width:660px;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn.secondary{background:rgba(255,255,255,.03)}.hero-note{margin-top:34px;color:var(--muted);font-size:12px;display:flex;gap:18px;flex-wrap:wrap}
+    .hero-note span{display:flex;align-items:center;gap:8px}.hero-note b{color:var(--text);font-weight:700}
+    .visual{position:relative;min-height:390px;display:grid;place-items:center}
+    .orbit{width:320px;height:320px;border:1px solid rgba(105,225,220,.24);border-radius:50%;position:absolute;animation:spin 34s linear infinite}
+    .orbit:before,.orbit:after{content:"";position:absolute;border:1px solid rgba(140,168,255,.2);border-radius:50%;inset:28px}
+    .orbit:after{inset:62px;border-color:rgba(105,225,220,.17)}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .core{width:260px;height:260px;border-radius:50%;background:#172b3a;border:1px solid rgba(105,225,220,.45);box-shadow:0 25px 90px rgba(38,174,174,.18),inset 0 1px rgba(255,255,255,.1);overflow:hidden;position:relative;z-index:2;transform:rotate(2deg)}.core img{width:100%;height:100%;display:block;object-fit:cover;object-position:center;}
+    .core strong{font-family:"DM Mono",monospace;font-size:48px;letter-spacing:-5px;color:var(--cyan)}.core small{display:block;color:var(--muted);font-size:10px;letter-spacing:2px;margin-top:5px}
+    .float{position:absolute;z-index:3;background:#131f30;border:1px solid var(--line);border-radius:10px;padding:10px 13px;font:11px "DM Mono",monospace;color:#c9d7eb;box-shadow:0 12px 30px #0005}
+    .f1{top:34px;right:0}.f2{bottom:55px;left:0}.f3{bottom:12px;right:15px}
+    section{padding:82px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:34px}
+    .kicker{font:11px "DM Mono",monospace;color:var(--cyan);letter-spacing:.1em;text-transform:uppercase}
+    h2{font-size:clamp(30px,4vw,43px);letter-spacing:-1.8px;line-height:1.15;margin:9px 0 0}
+    .section-desc{color:var(--muted);max-width:470px;font-size:14px;margin:0}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.panel{background:linear-gradient(145deg,rgba(19,31,49,.92),rgba(13,21,35,.9));border:1px solid var(--line);border-radius:16px;padding:26px}
+    .panel p{color:var(--muted);font-size:14px;margin:0 0 13px}.panel p:last-child{margin:0}
+    .focus-list{display:grid;gap:13px}.focus-item{display:flex;gap:13px;align-items:flex-start}.icon{width:34px;height:34px;flex:0 0 34px;border-radius:9px;background:rgba(105,225,220,.1);display:grid;place-items:center;color:var(--cyan);font-size:15px}
+    .focus-item strong{font-size:13px;display:block}.focus-item small{color:var(--muted);font-size:12px}
+    .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill-card{padding:21px;border-radius:13px;border:1px solid var(--line);background:rgba(16,24,39,.72)}
+    .skill-card h3{font-size:14px;margin:0 0 15px}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{font:11px "DM Mono",monospace;color:#c5d4e9;background:rgba(255,255,255,.045);border:1px solid var(--line);padding:7px 9px;border-radius:6px}
+    .project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{overflow:hidden;padding:0}.project-top{height:145px;background:linear-gradient(135deg,#153a46,#17233d);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+    .project-top:before,.project-top:after{content:"";position:absolute;width:180px;height:180px;border:1px solid #ffffff20;border-radius:50%}.project-top:after{width:125px;height:125px}
+    .project-symbol{font:500 42px "DM Mono",monospace;color:var(--cyan);z-index:1}.project-body{padding:23px}.project h3{margin:0 0 8px;font-size:19px}.project p{font-size:13px;color:var(--muted);margin:0 0 17px}.project .tags{margin-bottom:16px}
+    .project-link{font-size:12px;color:var(--cyan);font-weight:800}.project-link:hover{text-decoration:underline}
+    .timeline{display:grid;grid-template-columns:1fr 1fr;gap:18px}.timeline-card{position:relative;padding:23px 24px 23px 28px}.timeline-card:before{content:"";position:absolute;left:0;top:28px;width:3px;height:36px;background:var(--cyan);border-radius:3px}.timeline-card h3{font-size:15px;margin:5px 0}.timeline-card p{color:var(--muted);font-size:13px;margin:0}.date{font:10px "DM Mono",monospace;color:var(--cyan);text-transform:uppercase;letter-spacing:.08em}
+    .certs{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.cert{padding:18px;border:1px solid var(--line);border-radius:11px;background:rgba(16,24,39,.65)}.cert strong{display:block;font-size:13px}.cert span{color:var(--muted);font-size:11px}
+    .contact{background:linear-gradient(120deg,rgba(31,94,102,.2),rgba(36,48,91,.2));border:1px solid rgba(105,225,220,.2);border-radius:20px;padding:42px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+    .contact h2{max-width:600px}.contact p{color:var(--muted);font-size:14px}.contact-links{display:flex;flex-direction:column;gap:11px;min-width:220px}.contact-links a{font-size:13px;color:var(--cyan);font-weight:700}
+    footer{padding:28px 0;color:var(--muted);font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .mobile-menu{display:none}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding:78px 0 65px;gap:20px}.visual{min-height:330px}.orbit{width:270px;height:270px}.skills{grid-template-columns:repeat(2,1fr)}.certs{grid-template-columns:1fr 1fr}.section-head{display:block}.section-desc{margin-top:14px}.contact{display:block}.contact-links{margin-top:25px}}
+    @media(max-width:560px){.wrap{width:min(100% - 30px,var(--max))}nav{height:66px}.navlinks{display:none}.nav-cta{padding:9px 12px}.hero{min-height:auto}h1{letter-spacing:-2.7px}.lead{font-size:15px}.visual{min-height:290px}.orbit{width:235px;height:235px}.core{width:205px;height:205px}.core strong{font-size:40px}.f1{right:-3px;top:20px}.f2{left:-2px;bottom:45px}.f3{right:0;bottom:4px}section{padding:62px 0}.about-grid,.project-grid,.timeline{grid-template-columns:1fr}.skills,.certs{grid-template-columns:1fr}.panel{padding:21px}.contact{padding:26px}.hero-note{gap:12px}}
+  </style>
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <a class="brand" href="#home">PG<span>.</span></a>
+    <div class="navlinks">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+    </div>
+    <a class="nav-cta" href="#contact">Let's connect <span>↗</span></a>
+  </nav>
+</header>
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow"><i class="dot"></i> OPEN TO OPPORTUNITIES · PUNE, INDIA</div>
+      <h1>Hi, I'm<br><span class="accent">Prathmesh.</span></h1>
+      <p class="lead">Aspiring AI/ML Engineer and Python Developer, exploring how intelligent systems and automation can turn complex problems into useful, real-world solutions.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">Explore my work <span>↘</span></a>
+        <a class="btn secondary" href="Prathmesh-Garud-Resume.pdf" download>Download resume <span>↓</span></a>
+      </div>
+      <div class="hero-note"><span>⌘ <b>Python</b></span><span>✳ <b>AI / ML</b></span><span>↯ <b>Automation</b></span></div>
+    </div>
+    <div class="visual" aria-label="Abstract technology illustration">
+      <div class="orbit"></div>
+      <div class="core"><img src="profile.jpg" alt="Professional portrait of Prathmesh Garud"></div>
+      <div class="float f1">01 / INTELLIGENCE</div><div class="float f2">print("hello, future")</div><div class="float f3">PYTHON × AI</div>
+    </div>
+  </div>
+
+  <section id="about"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">01 / ABOUT ME</div><h2>Curiosity meets<br>practical problem-solving.</h2></div><p class="section-desc">I enjoy building digital products, learning emerging technologies and finding practical ways to make software more useful.</p></div>
+    <div class="about-grid">
+      <div class="panel">
+        <p>I'm a BBA-CA graduate based in Pune, Maharashtra, with a foundation in Python, web development and data analytics. My project experience includes building web applications with Django and working with relational databases.</p>
+        <p>I'm currently growing toward AI/ML engineering, with a particular interest in AI-powered applications and workflow automation using tools such as n8n and Make. I value hands-on learning and building solutions that connect technology with real user needs.</p>
+      </div>
+      <div class="panel focus-list">
+        <div class="focus-item"><div class="icon">⌁</div><div><strong>AI & Machine Learning</strong><small>Building understanding of intelligent applications and practical ML use cases.</small></div></div>
+        <div class="focus-item"><div class="icon">⌘</div><div><strong>Python Development</strong><small>Developing with Python and web frameworks, with a focus on clean, useful solutions.</small></div></div>
+        <div class="focus-item"><div class="icon">↯</div><div><strong>AI Automation</strong><small>Exploring workflow automation with n8n, Make and connected tools.</small></div></div>
+        <div class="focus-item"><div class="icon">▥</div><div><strong>Data & Insights</strong><small>Interested in using data analysis to support better decisions.</small></div></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="skills"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">02 / TOOLKIT</div><h2>Technologies I work with.</h2></div><p class="section-desc">A snapshot of the technologies listed in my resume and the areas I'm actively exploring.</p></div>
+    <div class="skills">
+      <div class="skill-card"><h3>Programming</h3><div class="tags"><span class="tag">Python</span><span class="tag">C · Basic</span></div></div>
+      <div class="skill-card"><h3>Web technologies</h3><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">React</span></div></div>
+      <div class="skill-card"><h3>Frameworks</h3><div class="tags"><span class="tag">Django</span><span class="tag">Flask</span></div></div>
+      <div class="skill-card"><h3>Databases</h3><div class="tags"><span class="tag">MySQL</span><span class="tag">SQLite</span></div></div>
+      <div class="skill-card"><h3>Tools & platforms</h3><div class="tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Git Bash</span><span class="tag">MS Office</span></div></div>
+      <div class="skill-card"><h3>Currently exploring</h3><div class="tags"><span class="tag">AI / ML</span><span class="tag">n8n</span><span class="tag">Make</span><span class="tag">AI Automation</span></div></div>
+    </div>
+  </div></section>
+
+  <section id="projects"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">03 / SELECTED WORK</div><h2>Projects built to solve problems.</h2></div><p class="section-desc">Academic projects that helped me practice end-to-end development, data workflows and product thinking.</p></div>
+    <div class="project-grid">
+      <article class="panel project">
+        <div class="project-top"><div class="project-symbol"> HMS </div></div>
+        <div class="project-body"><div class="kicker">HEALTHCARE · WEB APPLICATION</div><h3>Hospital Management System</h3>
+          <p>Developed a full-stack web application concept to streamline hospital operations for patients, doctors and administrative staff. Includes patient registration, appointment scheduling, doctor management and centralized data access.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">MySQL</span></div>
+          <span class="project-link">Academic project · Details available on request
+            <br><a href="https://github.com/prathmeshgarud-svg/DY-Hospital-Management-System/tree/main/Desktop/project" target="_blank">View on GitHub</a>
+          </span>
+        </div>
+      </article>
+      <article class="panel project">
+        <div class="project-top" style="background:linear-gradient(135deg,#3b2851,#192c4c)"><div class="project-symbol">C&C / 02</div></div>
+        <div class="project-body"><div class="kicker">E-COMMERCE · PROTOTYPE</div><h3>Code&Coffee</h3>
+          <p>Designed an e-commerce prototype blending technology and lifestyle themes. Built a product catalogue, ordering workflow and backend data management for browsing and ordering beverages and snacks.</p>
+          <div class="tags"><span class="tag">Django</span><span class="tag">HTML / CSS</span><span class="tag">SQLite</span></div>
+          <span class="project-link">Academic project · Details available on request <br>
+            <a href="https://github.com/prathmeshgarud-svg/cafe" target="_blank">View on GitHub</a>
+          </span>
+        </div>
+      </article>
+    </div>
+  </div></section>
+
+  <section id="journey"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">04 / BACKGROUND</div><h2>Education & credentials.</h2></div><p class="section-desc">My academic foundation and continued learning through practical training and job simulations.</p></div>
+    <div class="timeline">
+      <div class="panel timeline-card"><div class="date">Graduated · 2026</div><h3>Bachelor of Business Administration – Computer Application</h3><p>Dr. D.Y. Patil Arts, Commerce & Science College, Pune<br>SGPA: 8.18 (as listed in supplied resume)</p></div>
+      <div class="panel timeline-card"><div class="date">2021 – 2022</div><h3>Higher Secondary Certificate (HSC)</h3><p>Dayanand Science Jr College · 70.67%</p></div>
+      <div class="panel timeline-card"><div class="date">2019 – 2020</div><h3>Secondary School Certificate (SSC)</h3><p>New Jyotirgamaya English School · 92.40%</p></div>
+      <div class="panel timeline-card"><div class="date">Strengths</div><h3>Communication & collaboration</h3><p>Problem-solving, client communication, teamwork and adaptability. Languages: English, Hindi and Marathi.</p></div>
+    </div>
+    <div style="margin:30px 0 13px" class="kicker">CERTIFICATIONS & JOB SIMULATIONS</div>
+    <div class="certs">
+      <div class="cert"><strong>Gen AI-Powered Data Analytics Job Simulation</strong><span>Tata · Forage</span></div>
+      <div class="cert"><strong>Data Analytics Job Simulation</strong><span>Deloitte · Forage</span></div>
+      <div class="cert"><strong>Web Development Certification</strong><span>Dr. D.Y. Patil University (DPU)</span></div>
+    </div>
+  </div></section>
+
+  <section id="contact"><div class="wrap">
+    <div class="contact"><div><div class="kicker">05 / GET IN TOUCH</div><h2>Have an idea or opportunity? Let's build something meaningful.</h2><p>I'm interested in connecting with teams, mentors and people working on practical technology solutions.</p></div>
+      <div class="contact-links">
+        <a href="mailto:Prathmeshgarud.dev@gmail.com">✉ Prathmeshgarud.dev@gmail.com </a>
+        <a href="tel:+917058380292">☏ +91 70583 80292</a>
+        <a href="https://www.linkedin.com/in/prathmeshgarud" target="_blank" rel="noopener">in LinkedIn profile </a>
+        <a href="https://github.com/prathmeshgarud-svg" target="_blank" rel="noopener">⌘ GitHub </a>
+        <span style="font-size:11px;color:var(--muted)">Pune, Maharashtra, India</span>
+      </div>
+    </div>
+  </div></section>
+</main>
+<footer><div class="wrap footer-inner"><span>© <span id="year"></span> Prathmesh Garud. Designed with purpose.</span><span>AI · Python · Automation</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
